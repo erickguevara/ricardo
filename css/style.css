@@ -39,7 +39,46 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 9px;
+  border-color: #9e9999 ;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 4px;
+  outline: none;
+  transition: 0.4s;
+}
+.img-coach{
+  background-image: url(/Ricardo-palma/img/38f4e3f1-bee4-4fb3-9e24-3e0480f8569e.png);
+}
+.normal-button  {
+  background-color: rgb(94 206 94);
+  color: #444;
+  cursor: pointer;
+  padding: 9px;
+  border-color: #9e9999 ;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 4px;
+  outline: none;
+  transition: 0.4s;
+}
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -55,6 +94,21 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     /* margin-right: 33px; */
     padding-right: 17px;
 }
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 35.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
 .text-type{
   position: absolute;
   top: 25%;
@@ -64,9 +118,16 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 .text-img{
   position: relative;
   display: inline-block;
+  
+}
+.text-img:hover{
+  filter: opacity(.5);
+  
+
 }
 .text-span{
   font-weight: bold;
+  border-bottom: 3px solid #343a40 !important;
 }
 body {
   margin: 0;
@@ -8203,10 +8264,10 @@ h1, h2, h3, h4, h5,
       color: #fff; }
 
 .form-control {
-  height: 52px;
+  height: 36px;
   background: #fff;
   color: #000;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
