@@ -51,6 +51,10 @@
   outline: none;
   transition: 0.4s;
 }
+.font-h4{
+  margin: auto;
+  color: green;
+}
 .img-coach{
   background-image: url(/Ricardo-palma/img/38f4e3f1-bee4-4fb3-9e24-3e0480f8569e.png);
 }
